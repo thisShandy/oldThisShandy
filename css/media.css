@@ -29,6 +29,9 @@
     display: block;
     text-align: center;
     padding: 100px 0 100px 0;
+} #about-me {
+    background-color: black;
+    width: 100%;
 }
 }
 
@@ -44,7 +47,10 @@
         display: none;
     } .logo-shandy {
         margin: 500px auto 0 auto;
-    }
+    } #about-me {
+    background-color: black;
+    width: 100%;
+}
 }
 
 /* Small Devices, Tablets */
@@ -59,7 +65,10 @@
         display: none;
     } .logo-shandy {
         margin: 600px auto 0 auto;
-    }
+    } #about-me {
+    background-color: black;
+    width: 100%;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -73,7 +82,10 @@
         display: none;
     } .logo-shandy {
         margin: 500px auto 0 auto;
-    }
+    } #about-me {
+    background-color: black;
+    width: 100%;
+}
 }
 
  /* Large Devices, Wide Screens */
@@ -91,6 +103,9 @@
     display: block;
     position: fixed;
     text-align: center;
+    width: 100%;
+} #about-me {
+    background-color: black;
     width: 100%;
 }
 }
