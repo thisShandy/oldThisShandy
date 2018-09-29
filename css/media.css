@@ -1,0 +1,96 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+.p-img {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+.p-img {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 40%;
+
+}    #menu {
+        display: none;
+    } .logo-shandy {
+        margin: 500px auto 0 auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 890px) {
+.p-img {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+
+    } #menu {
+        display: none;
+    } .logo-shandy {
+        margin: 600px auto 0 auto;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.p-img {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+}   #menu {
+        display: none;
+    } .logo-shandy {
+        margin: 500px auto 0 auto;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.p-img {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+}  .logo-shandy {
+    display: block;
+    margin: 365px auto 0 auto;
+}    #menu {
+    background-color: #f2f2f2;
+    display: block;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+}
