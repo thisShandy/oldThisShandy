@@ -88,8 +88,8 @@ and Cult to Follow.  I very outgoing and open person.
    <section id="contact-me">
        <div class="container">
            <h3 class="revealator-zoomin revealator-delay">CONTACT ME</h3>
-           <div class="col-lg-6"><a href="" class="social revealator-zoomout revealator-delay1">telegram</a></div>
-           <div class="col-lg-6"><a href="" class="social revealator-zoomout revealator-delay2">instagram</a></div>
+           <div class="col-lg-6"><a href="https://vk.com/ishandow" class="social revealator-zoomout revealator-delay1">VKontakte</a></div>
+           <div class="col-lg-6"><a href="https://www.instagram.com/georgiy.pavlov/?hl=ru" class="social revealator-zoomout revealator-delay2">instagram</a></div>
            <div class="col-lg-12">
                <p class="email revealator-zoomin">shandyrix@gmail.com</p>
            </div>
@@ -110,6 +110,24 @@ and Cult to Follow.  I very outgoing and open person.
 });
     </script>    
     
+    <script>
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event)     {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+ 
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+ 
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+         
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top - -100}, 1500);
+        });
+    });
+
+    </script>
     
     
 </body>
