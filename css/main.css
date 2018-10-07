@@ -1,0 +1,74 @@
+
+.bg-gray {
+    background-color: #161515;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar-brand, .white {
+    color: white;
+}
+
+.navbar-brand:hover, .hov:hover {
+    color: #00a99d;
+}
+
+h1 {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 60px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.625em;
+} 
+
+header {
+    height: 100vh;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+.padding-20 {
+    padding: 20px 0
+}
+
+#ecscursion {
+    background-color: #00a99d;
+    padding-bottom: 450px;
+}
+
+#school_history {
+    background-color: #161515;
+}
+
+footer {
+    background-color: #00a99d;
+}
+
+.h4-footer {
+    color: #161515;
+    margin: 0;
+    font-size: 17px;
+    padding: 5px;
+}
