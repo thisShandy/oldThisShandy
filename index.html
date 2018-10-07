@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shandy</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway100,300,300i,400,400i,500,700,900|Roboto:100,300,300i,400,400i,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/fm.revealator.jquery.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body>
+   
+   <div id="page-preloader"><span class="spinner"></span></div>
+
+   <section id="menu" class="revealator-slidedown ">
+        <div class="container">
+            <ul class="main-menu">
+                <li><a class="menu-el" href="#home">HOME</a></li>
+                <li><a class="menu-el" href="#about-me">ABOUT ME</a></li>
+                <li><a class="menu-el" href="#hobbies">HOBBIES</a></li>
+                <li><a class="menu-el" href="#photos">PHOTOS</a></li>
+                <li><a class="menu-el" href="#contact-me">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </section>
+    <header id="home">
+        <img class="logo-shandy revealator-slideup revealator-delay" src="img/Shandy.png" alt="Shandy">
+    </header>
+    
+    <section id="about-me">
+        <div class="container">
+            <h3 class="h3-f revealator-zoomin revealator-delay">ABOUT ME</h3>
+            <img class="georgy-photo revealator-slideright revealator-delay" src="img/Geargy.png" alt="Georgy">
+            <p class="about-text first revealator-slideleft revealator-within">My name Gosha. I live in Belarus. From 14 years i do programming, sometimes I like make a photos.
+I very like ride on a bike. The main task for yourseft think to graduate from school and to go to college
+on mobile developer. My lovely conutry is Britain and Sweden. I want to live in one of these countries. </p>
+            <p class="about-text revealator-slideleft revealator-delay2 revealator-within">Sometimes i like reading books and drawing. Usually reading books about programming for example 
+K. Syerra - “Head first Java” and G. Shildt - “Java 8”. I like drawing emoji, cats, cartoon people. Now I 
+learn to play guitar. I like to thnk about unusual and custom things. Usually I like listen the Skillet rockband 
+and Cult to Follow.  I very outgoing and open person.
+</p>
+        </div>
+    </section>
+    
+    <section id="hobbies">
+        <div class="container">
+            <h3 class="revealator-zoomin revealator-delay">HOBBIES</h3>
+            <ul class="hobby">
+                <li class="revealator-slideup revealator-within">
+                    <img src="img/draw.png" alt="#" class="hobby-img">
+                    <p class="hobby-txt">DRAWING</p>
+                </li>
+                <li class="revealator-slideup revealator-delay1 revealator-within">
+                    <img src="img/guitar.png" alt="#" class="hobby-img">
+                    <p class="hobby-txt">GUITAR</p>
+                </li>
+                <li class="revealator-slideup revealator-delay2 revealator-within">
+                    <img src="img/computer.png" alt="#" class="hobby-img">
+                    <p class="hobby-txt">PROGRAMMING</p>
+                </li>
+                <li class="revealator-slideup revealator-delay3 revealator-within">
+                    <img src="img/camera.png" alt="#" class="hobby-img">
+                    <p class="hobby-txt">PHOTO</p>
+                </li>
+                <li class="revealator-slideup revealator-delay4 revealator-within">
+                    <img src="img/bicycle.png" alt="#" class="hobby-img">
+                    <p class="hobby-txt">BIKE</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="photos">
+        <div class="container">
+            <h3 class="revealator-zoomin revealator-delay">PHOTOS</h3>
+            <div class="col-lg-12 revealator-zoomin revealator-delay"><img class="p-img" src="img/1.png" alt="#"></div>
+            <div class="col-lg-12 revealator-zoomin revealator-delay"><img class="p-img" src="img/2.png" alt="#"></div>
+            <div class="col-lg-12 revealator-zoomin revealator-delay"><img class="p-img" src="img/3.png" alt="#"></div>
+        </div>
+    </section>
+   
+   
+   <section id="contact-me">
+       <div class="container">
+           <h3 class="white revealator-zoomin revealator-delay">CONTACT ME</h3>
+           <div class="col-lg-6"><a href="https://vk.com/ishandow" class="social revealator-zoomout revealator-delay1">VKontakte</a></div>
+           <div class="col-lg-6"><a href="https://www.instagram.com/georgiy.pavlov/?hl=ru" class="social revealator-zoomout revealator-delay2">Instagram</a></div>
+           <div class="col-lg-12">
+               <p class="email revealator-zoomin">shandyrix@gmail.com</p>
+           </div>
+       </div>
+   </section>
+   
+   <footer>
+       <img class="you" src="img/i.png" alt="you">
+   </footer>
+    
+    
+    <script>
+        $(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+    </script>    
+    
+    <script>
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event)     {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+ 
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+ 
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+         
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top - -100}, 1500);
+        });
+    });
+
+    </script>
+    
+    
+</body>
+</html>
